@@ -1,0 +1,101 @@
+/* Header Parallax Element Style*/
+
+.paral {
+    min-height: 1000px;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Paragraph for Parallax Section */
+
+.paral p {
+    font-size: 24px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 60px;
+  
+}
+
+/* Heading for Parallax Section */
+
+.paral h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+
+/* Image for Parallax Section */
+
+.paralsec {
+    background-image: url("../imgs/background1.jpg");
+}
+
+.paralsec1 {
+    background-image: url("../imgs/background2.jpg");
+}
+
+.paralsec2 {
+    background-image: url("../imgs/background1.jpg");
+}
+
+/* Remove Bottom Margin from Jumbotron */
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+.carousel-caption {
+    background-image: url("../imgs/background1.jpg");
+    opacity: 0.8;
+}
+
+/* .................................Contact Form........................................... */
+
+
+.contact {
+    padding: 4%;
+    height: 400px;
+    padding-bottom: 400px;
+}
+
+.col-md-3 {
+    background: #363a40;
+    padding: 4%;
+    opacity: 0.8;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 10%;
+}
+
+.contact-info img {
+    margin-bottom: 15%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10%;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form button {
+    background: #363a40;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus {
+    box-shadow: none;
+}
+/* --------------------Footer---------------------------- */
+.footer {
+    padding-top: 40px;
+ 
+}

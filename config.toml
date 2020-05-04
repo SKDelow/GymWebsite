@@ -1,0 +1,19 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "mytheme"
+relativeURLs = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Our-Mission"
+    name = "Our Mission"
+    url = "/speakers/"
+    weight = -140
+
+  [[menu.main]]
+    identifier = "about us"
+    name = "Contact Us"
+    url = "/aboutus/"
+    weight = -110

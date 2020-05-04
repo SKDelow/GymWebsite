@@ -1,0 +1,23 @@
+<div class="container-fluid m-0 p-0">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand " href="{{ "/" | relURL}}"><img class="img-fluid hoverable" src="/imgs/gymLogo.png"
+                height="100px" width="300px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto font-weight-bolder ">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li
+                    class="navbar-item mr-5 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+                    <a class="nav-link" href="{{ .URL }}" title="{{ .Title }}"><h4 class="text-white">{{ .Name }}</h4></a>
+                </li>
+
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+</div>
